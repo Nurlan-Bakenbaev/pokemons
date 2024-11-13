@@ -5,6 +5,7 @@ const PokemonCard = ({ name, url }) => {
   const [img, setImg] = useState("");
   const fetchPokemonImg = async (url) => {
     try {
+      
       const response = await axios.get(url);
       const imageUrl = response.data.sprites.front_default;
       setImg(imageUrl);
