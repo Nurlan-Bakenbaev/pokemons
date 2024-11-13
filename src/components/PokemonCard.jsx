@@ -9,7 +9,7 @@ const PokemonCard = ({ name, url }) => {
       const imageUrl = response.data.sprites.front_default;
       setImg(imageUrl);
     } catch (error) {
-      console.error("Error fetching Pokémon data:", error);
+      console.error( error);
     }
   };
   useEffect(() => {
